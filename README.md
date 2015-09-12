@@ -7,6 +7,8 @@ this extracts PDF creation time from metadata and converts it to huma-readable f
 requirements:
 pdfminer:
 git clone https://github.com/euske/pdfminer.git
+cd pdfminer
+python setup.py install
 
 usage: python paper-date [pdf file]
 

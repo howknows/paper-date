@@ -19,4 +19,4 @@ paper = PDFDocument(parse)
 origdate = paper.info[0]['CreationDate'][2:-7]
 conv = strptime(origdate, "%Y%m%d%H%M%S")
 newdate = datetime.fromtimestamp(mktime(conv))
-print "Research for " + sys.argv[1] + "was probably conducted around " + str(newdate) + " according to PDF creation time."
+print "Research for " + sys.argv[1] + " was probably conducted around " + str(newdate) + " according to PDF creation time."

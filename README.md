@@ -4,8 +4,8 @@ ever wonder what the research date was on a paper? me too.
 
 this extracts PDF creation time from metadata and converts it to human-readable for a possible approximate research time.
 
-requirements:
-pdfminer:
+requirements:<br>
+pdfminer:<br>
 git clone https://github.com/euske/pdfminer.git && cd pdfminer && python setup.py install
 
 usage: python paper-date [pdf file]

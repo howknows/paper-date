@@ -2,7 +2,7 @@
 
 ever wonder what the research date was on a paper? me too. 
 
-this extracts PDF creation time from metadata and converts it to huma-readable for a possible approximate research time.
+this extracts PDF creation time from metadata and converts it to human-readable for a possible approximate research time.
 
 requirements:
 pdfminer:

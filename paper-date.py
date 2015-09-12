@@ -8,6 +8,10 @@ from pdfminer.pdfdocument import PDFDocument
 from time import mktime, strptime
 from datetime import datetime
 
+class x:
+    r = '\033[91m'
+    b = '\033[0m'
+
 if len(sys.argv) != 2:
     print 'Usage: python %s [pdf file]' % sys.argv[0]
     exit()
@@ -19,4 +23,4 @@ paper = PDFDocument(parse)
 origdate = paper.info[0]['CreationDate'][2:-7]
 conv = strptime(origdate, "%Y%m%d%H%M%S")
 newdate = datetime.fromtimestamp(mktime(conv))
-print "Research for " + sys.argv[1] + " was probably conducted around " + str(newdate) + " according to PDF creation time."
+print "Research for " + x.r + sys.argv[1] + x.b + " was probably conducted around " + x.r + str(newdate) + x.b + " according to PDF creation time."
